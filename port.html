@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>박다현의 포트폴리오</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="port.css" />
+</head>
+<body style="background-color:#e1dbea";>
+
+  <header>
+    <div>📄 박다현의 포트폴리오</div>
+  </header>
+
+  
+  <h1 id="typing"></h1>
+   <script>
+    const text = "박다현의 포트폴리오입니다!👩‍💻";
+    let i = 0;
+    const speed = 100; // 타이핑 속도(ms)
+
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+
+  <div class="sectiontitle">Profile</div>
+
+  <section class="profilesection">
+    <div class="profilephoto">
+      <img src="./img/KakaoTalk_20221203_112038552.jpg"/>
+    </div>
+    <div class="profiletext">
+      <div class="quote">
+        “안녕하세요. 꾸준히 성장하는 개발자가 되고싶은 박다현입니다! 잘부탁드립니다.”
+      </div>
+      <p>
+        배우고자 하는 진정성과 실행력은 자신 있습니다. 
+        프론트엔드에 입문한지 얼마 안되었지만, 
+        꾸준히 학습하고자 하는 열정이 있습니다! 열심히 하겠습니다. <br>
+        입시와 학업, 프로젝트 경험을 통해 어려움을 이겨내는 법을 배웠고, 
+        저는 하고자 하는 열정이 있다면 무엇이든 해낼 수 있다는 확신을 갖고 있습니다. 
+        그 믿음을 바탕으로 데브코스에서 노력하고, 
+        성장해나가는 과정을 꼭 보여드리겠습니다.
+
+      </p>
+      <a href="#" class="viewmore"onclick="myFunction()"> view more</a> &gt;</a>
+      <script>
+      function myFunction() {
+      alert("안녕하세요!");
+      }
+      </script>
+    </div>
+  </section>
+
+  <div class="contact">
+    📧 uiopjkl68@gmail.com <br>
+    ✏️ <a href="https://github.com/dahyeon12/uiopjkl68" target="_blank">Github</a>
+  </div>
+
+  <div class="whenever">
+    언제든 편하게 연락주세요 :)
+  </div>
+
+  <div class="section2title">About</div>
+
+  <section class="aboutsection">
+     <h2>- EDUCATION</h2>
+        <ul>
+            <li>2021 ~ 2025 한양대학교 생명공학과 </li>
+            <li>2025. 07 ~ 프로그래머스 데브코스</li>
+        </ul>
+
+        <h2>- CERTIFICATE</h2>
+        <ul>
+            <li>컴퓨터활용능력 1급</li>
+            <li>토익 800</li>
+        </ul>
+  </section>
+
+<h5>감사합니다!</h5>
+
+</body>
+</html>
